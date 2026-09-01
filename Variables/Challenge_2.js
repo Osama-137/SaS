@@ -1,9 +1,3 @@
-const readline = require('readline');
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-rl.question("Budget en MAD : ", (answer) => {
-  console.log(`Budget en EUR : ${answer/11}`);
-  rl.close();
-});
+const prompt = require('prompt-sync')();
+let n = prompt("Budget en MAD : ")
+console.log(`Budget en EUR : ${+n / 11}`);
