@@ -1,3 +1,3 @@
 const prompt = require('prompt-sync')();
 let n = prompt("Budget en MAD : ")
-console.log(`Budget en EUR : ${+n / 11}`);
+console.log(`Budget en EUR : ${Math.round(+n / 11)}`);
